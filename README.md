@@ -23,8 +23,10 @@ java Main 1000 8
 ```
 
 ## Implementation
+#### Calculating the prime numbers
 The Sieve of Eratosthenes (SoE) parallelization is performed using a 2d array of size `n * k`. Each thread iterates over their respective row and marks non-primes. Then, a bit-wise OR-operation on all rows merge the work of each individual thread. The threads are initiated on the index corresponding to their id, and jumps *k* indexes for each prime number check. This balances workload, since more primes occur at lower integers.  
 
+#### Prime number factorizartion
 The prime factorization works by each thread running through a local copy of the integers to factorize. Each thread factorizes every number, but only with every *k-th* prime. what primes to use are decided using the thread id. All threads perform partial factorization on all numbers, storing the factors in a local HashMap. The HashMaps are merged after the iteration, allowing for only *k* synchronziations. After all threads are done and all HashMaps are mergeed, factors are sequentially added to the precode file
 
 ## Results
