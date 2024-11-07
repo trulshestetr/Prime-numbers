@@ -17,7 +17,7 @@ java Main <n> <k> -m
 
 ### Usage example
 
-Find all primes less than or equal to 1.000 and factorize all numbers in the interval \[999899, 999999]* using 8 cores.
+Find all primes less than or equal to 1.000 and factorize all numbers in the interval \*[999899, 999999]* using 8 cores.
 ```
 java Main 1000 8 
 ```
