@@ -1,4 +1,4 @@
-# prime-numbers
+# Prime-numbers
 
 All primes up to a given value *n* are calculated using the Sieve of Eratosthenes and prime number factorization is performed on the 100 largest numbers less than n<sup>2</sup>. The calculations are done both sequentially and in parallel. Time and speedup reportings are printed at the end. All prime number factorizations are written to .txt files. This project is the third assignment in the course IN3030 at the University of Oslo
 
